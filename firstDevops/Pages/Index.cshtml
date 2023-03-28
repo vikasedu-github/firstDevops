@@ -6,5 +6,91 @@
 
 <div class="text-center">
     <h1 class="display-4">I am Into Post Production</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Survey Form</title>
+        <style>
+            /* Basic styling for the form */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f2f2f2;
+            }
+
+            form {
+                max-width: 600px;
+                margin: 0 auto;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            }
+
+            h1 {
+                text-align: center;
+                margin-top: 0;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            select {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            input[type="submit"] {
+                background-color: #4CAF50;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+                input[type="submit"]:hover {
+                    background-color: #3e8e41;
+                }
+        </style>
+    </head>
+    <body>
+        <form>
+            <h1>Submit Your Feedback</h1>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age">
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
+
+
+    <p>End of Form.</p>
 </div>
