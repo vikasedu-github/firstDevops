@@ -28,7 +28,15 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: VSTest@2
+# - task: VSTest@2
+#   inputs:
+#     platform: '$(buildPlatform)'
+#     configuration: '$(buildConfiguration)'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Exporting Artifacts in Container'
   inputs:
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'dropTestArtifact'
+    publishLocation: 'Container'
+
